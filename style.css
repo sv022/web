@@ -84,6 +84,7 @@ h3 {
   padding-right: 1vw;
   font-size: 16px;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 @media (max-width: 1210px){
@@ -137,8 +138,26 @@ h3 {
 .listing {
   height: 350px;
   width: 300px;
-  background-color: rgb(199, 199, 199);
+  padding: 0.3%;
+  border: 1px solid #f3f3f3;
+  border-radius: 3px;
   margin: 3px;
+}
+
+.listing:hover {
+  border: 1px solid white;
+  box-shadow: 3px 3px rgb(201, 208, 209);
+  box-shadow: 3px 3px 6px rgb(201, 208, 209), -3px -3px 6px rgb(201, 208, 209), -3px 3px 6px rgb(201, 208, 209), 3px -3px 6px rgb(201, 208, 209);
+}
+
+.listing_photo {
+  width: 95%; 
+  align-content: center;
+  border-radius: 3px;
+}
+
+.listing h5 {
+  font-weight: bold;
 }
 
 .site_footer {
