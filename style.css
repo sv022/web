@@ -36,6 +36,12 @@ h3 {
   border-right: 1px solid #232122;
 }
 
+@media (max-width: 730px) {
+  .logo {
+    width: 6%;
+  }
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -77,6 +83,13 @@ h3 {
   padding-left: 1vw;
   padding-right: 1vw;
   font-size: 16px;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 1210px){
+  .location {
+    font-size: 0px;
+  }
 }
 
 .category_searchbox {
@@ -97,11 +110,21 @@ h3 {
   width: 29%;
   min-width: 167px;
   border: 1px solid #232122;
+  background-color: #fdfdfd;
   padding: 1.5%;
   margin: 3px;
+  border-radius: 3px;
   text-align: center;
-  text-wrap: pretty;
-  font-weight: bold;
+  text-wrap: nowrap;
+  font-size: larger;
+}
+
+@media (max-width: 727px){
+  .category {
+    min-height: 65px;
+    padding-top: 5%;
+    padding-bottom: 0.5%;
+  }
 }
 
 .remarkable_listings { 
