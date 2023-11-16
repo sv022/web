@@ -1,0 +1,117 @@
+/* 
+black - #232122
+green - #A5C05B
+grey - #DDDEDE
+blue-ish - #7BA4A8
+*/
+
+header {
+  padding: 1%;
+}
+
+main {
+  padding: 5%;
+}
+
+footer {
+  padding: 5%;
+}
+
+.logo {
+  padding: 0.1%;
+  padding-left: 1vw;
+  padding-right: 3vw;
+  margin-right: 2vw;
+  text-align: center;
+  width: 17%;
+  border-right: 1px solid #232122;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+
+}
+
+.searchbar {
+  width: 45vw;
+  height: 70%;
+  border: 1px solid #232122;
+  border-radius: 5px;
+  /* margin-left: 5%; */
+  /* up to 1085 */
+
+  margin-right: 2vw;
+  padding-left: 1vw;
+
+  
+}
+
+.userlogin {
+  margin-left: auto;
+  color: black;
+  font-size: 24px;
+}
+
+.userregister {
+  margin-left: 1%;
+  color: #232122;
+  font-size: 24px;
+}
+
+.location {
+  margin-right: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 16px;
+}
+
+.category_searchbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1100px;
+  margin-bottom: 15vh;
+}
+
+@media (max-width: 1200px){
+  .category_searchbox {
+    width: 90vw;
+  }
+}
+
+.category {
+  width: 29%;
+  min-width: 167px;
+  border: 1px solid #232122;
+  padding: 1.5%;
+  margin: 3px;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.remarkable_listings { 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90vw;
+}
+
+.listing {
+  height: 350px;
+  width: 300px;
+  background-color: rgb(199, 199, 199);
+  margin: 3px;
+}
+
+.site_footer {
+  display: flex;
+  align-items: center;
+}
+
+.site_footer .footer_useragreement {
+  text-align: right;
+  margin-left: auto;
+}
