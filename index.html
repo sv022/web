@@ -4,15 +4,18 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/guitar_logo_small.png">
         <title>MusicTrade: Обмен и Продажа Музыкального Оборудования</title>
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
             <div class="navbar">
                 <div class="logo">
-                    <picture>
-                        <source media="(min-width: 730px)" srcset="img\guitar_logo.png" style="width: 50%;">
-                        <img src="img/guitar_logo_small.png" style="width: 100%;">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 730px)" srcset="img\guitar_logo.png" style="width: 50%; transition: 1s;">
+                            <img src="img/guitar_logo_small.png" style="width: 100%; transition: 1s;">
+                        </picture>
+                    </a>
                 </div>
                 <div class="searchbar"></div>
                 <div class="location"><img src="img/locationicon.png" style="height: 15px; margin-right: 5px;">Москва</div>
