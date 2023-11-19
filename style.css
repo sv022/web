@@ -10,7 +10,13 @@ html {
 }
 
 header {
-  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #DDDEDE;
 }
 
 main {
@@ -51,18 +57,29 @@ h3 {
 }
 
 .searchbar {
+  display: flex;
   width: 45vw;
   height: 70%;
   border: 1px solid #232122;
   border-radius: 5px;
   /* margin-left: 5%; */
   /* up to 1085 */
-
+  justify-content: left;
   margin-right: 2vw;
-  padding-left: 1vw;
-
-  
+  padding-left: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
+
+.searchbar input {
+  margin-left: 5px;
+  width: 100%; 
+  border: none;
+  outline: none;
+  color: #525c5c;
+  border-radius: 5px;
+}
+
 
 .userlogin {
   margin-left: auto;
@@ -114,7 +131,7 @@ h3 {
   background-color: #fdfdfd;
   padding: 1.5%;
   margin: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   text-align: center;
   text-wrap: nowrap;
   font-size: larger;
@@ -139,25 +156,57 @@ h3 {
   height: 350px;
   width: 300px;
   padding: 0.3%;
-  border: 1px solid #f3f3f3;
-  border-radius: 3px;
+  /*border: 1px solid #f3f3f3;*/
+  border-radius: 10px;
   margin: 3px;
+  color: #232122;
 }
 
 .listing:hover {
-  border: 1px solid white;
   box-shadow: 3px 3px rgb(201, 208, 209);
-  box-shadow: 3px 3px 6px rgb(201, 208, 209), -3px -3px 6px rgb(201, 208, 209), -3px 3px 6px rgb(201, 208, 209), 3px -3px 6px rgb(201, 208, 209);
+  box-shadow: 3px 3px 6px rgb(238, 244, 245), -3px -3px 6px rgb(238, 244, 245), -3px 3px 6px rgb(238, 244, 245), 3px -3px 6px rgb(238, 244, 245);
 }
 
 .listing_photo {
   width: 95%; 
   align-content: center;
-  border-radius: 3px;
+  border-radius: 10px;
+}
+
+.price_section {
+  display: flex;
+  height: 30px;
+}
+
+.heart_listing {
+  content: url("img/heart_outline_black.png");
+  height: 25px; 
+  padding: 2%;
+  margin-left: auto; 
+}
+
+.heart_listing:hover {
+  content: url("img/heart_outline_orange.png");
+  border: 1px solid #DDDEDE;
+  padding: 2%;
+  border-radius: 40%;
+}
+
+.listing h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: larger;
 }
 
 .listing h5 {
+  font-size: 16px;
   font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.listing h6 {
+  margin-top: 3%;
+  color: #525c5c;
 }
 
 .site_footer {

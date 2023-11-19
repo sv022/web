@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/guitar_logo_small.png">
         <title>MusicTrade: Обмен и Продажа Музыкального Оборудования</title>
-        <script src="index.js"></script>
+        <script src="index.js" ></script>
     </head>
     <body>
         <header>
@@ -17,7 +17,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="searchbar"></div>
+                <div class="searchbar"><input type="text" placeholder="Поиск по объявлениям" id="searchbar" onkeyup="search()"></div>
                 <div class="location"><img src="img/locationicon.png" style="height: 15px; margin-right: 5px;">Москва</div>
                 <div class="userlogin">Вход</div>
                 <div class="userregister">Регистрация</div>
@@ -34,14 +34,16 @@
                     <div class="category">Педали эффектов</div>
                 </div>
                 <h3>Интересные объявления</h3>
-                <div class="remarkable_listings">
+                <div class="remarkable_listings" id="remarkable_listings">
                     <div class="listing">
                         <div style="text-align: center; width: 100%;">
-                            <img src="files/listing 1/1.jpg" class="listing_photo">
+                            <img src="files/Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert/1.jpg" class="listing_photo">
                         </div>
-                        <h5>Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert</h5>
-                        <h4>75000 ₽</h4>
-                        <h6>Москва, Юго-Западная</h6>
+                        <div>
+                            <h5>Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert</h5>
+                            <div class="price_section"><h4>75000 ₽</h4><img class="heart_listing"></div>
+                            <h6>Москва, Юго-Западная</h6>
+                        </div>
                     </div>
                     <div class="listing"></div>
                     <div class="listing"></div>
