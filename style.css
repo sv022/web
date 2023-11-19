@@ -137,6 +137,11 @@ h3 {
   font-size: larger;
 }
 
+.category a {
+  text-decoration: none;
+  color:#232122;
+}
+
 @media (max-width: 727px){
   .category {
     min-height: 65px;
@@ -168,9 +173,12 @@ h3 {
 }
 
 .listing_photo {
-  width: 95%; 
+  width: 270px;
+  height: 200px;
   align-content: center;
   border-radius: 10px;
+  object-fit: cover;
+  
 }
 
 .price_section {
