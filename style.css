@@ -178,7 +178,6 @@ h3 {
   align-content: center;
   border-radius: 10px;
   object-fit: cover;
-  
 }
 
 .price_section {
@@ -215,6 +214,31 @@ h3 {
 .listing h6 {
   margin-top: 3%;
   color: #525c5c;
+}
+
+.listing_page {
+  display: flex;
+  margin-left: 5%;
+  align-items: top;
+}
+
+.listing_page_photo {
+  width: 800px;
+  height: 600px;
+  align-content: center;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.listing_info {
+  margin-left: 1%;
+  max-width: 500px;
+  
+}
+
+.listing_info h4 {
+  font-size: 22px;
+  margin-bottom: 3%;
 }
 
 .site_footer {
