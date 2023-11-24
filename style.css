@@ -189,7 +189,7 @@ h3 {
   content: url("img/heart_outline_black.png");
   height: 25px; 
   padding: 2%;
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 .heart_listing:hover {
@@ -198,6 +198,7 @@ h3 {
   padding: 2%;
   border-radius: 40%;
 }
+
 
 .listing h4 {
   margin-bottom: 0;
@@ -231,14 +232,53 @@ h3 {
 }
 
 .listing_info {
-  margin-left: 1%;
-  max-width: 500px;
-  
+  margin-left: 2%;
+  max-width: 500px;  
 }
 
 .listing_info h4 {
   font-size: 22px;
   margin-bottom: 3%;
+}
+
+.listing_fav_button {
+  display: flex;
+  width: 43%;
+  padding: 10px;
+  align-items: center;
+  text-wrap: nowrap;
+  border: 1px solid #DDDEDE;
+  border-radius: 10px;
+}
+
+.listing_fav_heart {
+  height: 20px;
+  margin-right: 1vw;
+}
+
+@media (max-width: 1350px){
+  .listing_fav_button {
+    font-size: 0px;
+    width: fit-content;
+  }
+  .listing_fav_heart {
+    height: 30px;
+    margin-right: 0%;
+  }
+}
+
+
+.seller_profile {
+  margin: 1%;
+  margin-top: 30vh;
+}
+
+.message_seller_button {
+  margin-top: 10px;
+  padding: 3%;
+  border: 1px solid #232122;
+  max-width: fit-content;
+  border-radius: 10px;
 }
 
 .site_footer {

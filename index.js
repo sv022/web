@@ -4,3 +4,6 @@ function goToListing(listingID){
     console.log(listingID);
     
 }
+
+function addToFavourite(){
+}
