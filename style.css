@@ -17,6 +17,7 @@ header {
   left: 0;
   background-color: #fff;
   border-bottom: 1px solid #DDDEDE;
+  margin-right: -10px;
 }
 
 main {
@@ -90,9 +91,21 @@ h3 {
 
 .userregister {
   margin-left: 1%;
+  margin-right: 3%;
   color: #232122;
   font-size: 22px;
   font-weight: lighter;
+}
+
+@media (max-width: 730px){
+  .userlogin {
+    content: url(img/user_profile.png);
+    max-width: 30px;
+  }
+  .userregister {
+    font-size: 0px;
+  }
+
 }
 
 .location {
@@ -243,7 +256,7 @@ h3 {
 
 .listing_fav_button {
   display: flex;
-  width: 43%;
+  width: fit-content;
   padding: 10px;
   align-items: center;
   text-wrap: nowrap;
@@ -256,7 +269,7 @@ h3 {
   margin-right: 1vw;
 }
 
-@media (max-width: 1350px){
+@media (max-width: 1250px){
   .listing_fav_button {
     font-size: 0px;
     width: fit-content;
@@ -266,7 +279,6 @@ h3 {
     margin-right: 0%;
   }
 }
-
 
 .seller_profile {
   margin: 1%;
@@ -279,6 +291,17 @@ h3 {
   border: 1px solid #232122;
   max-width: fit-content;
   border-radius: 10px;
+}
+
+.listing_description {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.listing_description p {
+  text-wrap: pretty;
+  margin: 2%;
+  width: 70%;
 }
 
 .site_footer {

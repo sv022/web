@@ -4,7 +4,12 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/guitar_logo_small.png">
         <title>MusicTrade: Обмен и Продажа Музыкального Оборудования</title>
-        <script src="index.js" ></script>
+        <script>
+            function setDestination(listingID){
+                document.cookie = `listingID=${listingID}`;
+                location.replace("listing.html");
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -34,18 +39,18 @@
                     <div class="category"><a href="search.html">Педали эффектов</a></div>
                 </div>
                 <h3>Интересные объявления</h3>
-                <div class="remarkable_listings" id="remarkable_listings" onclick="goToListing('Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert')">
-                    <div class="listing" id="Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert">
+                <div class="remarkable_listings" id="remarkable_listings">
+                    <div class="listing" id="Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert" onclick="setDestination('Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert')">
                         <div style="text-align: center; width: 100%;">
                             <img src="files/Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert/1.jpg" class="listing_photo">
                         </div>
                         <div style="margin: 1%;">
                             <h5>Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert</h5>
-                            <div class="price_section"><h4>75 000 ₽</h4><img class="heart_listing" onclick="addToFavourite( )"></div>
+                            <div class="price_section"><h4>75 000 ₽</h4><img class="heart_listing"></div>
                             <h6>Москва, Юго-Западная</h6>
                         </div>
                     </div>
-                    <div class="listing">
+                    <div class="listing" id="1988 MIJ Fender Stratocaster 70s Reissue" onclick="setDestination('1988 MIJ Fender Stratocaster 70s Reissue')">
                         <div style="text-align: center; width: 100%;">
                             <img src="files/1988 MIJ Fender Stratocaster 70s Reissue/1.jpg" class="listing_photo">
                         </div>
@@ -55,7 +60,7 @@
                             <h6>Москва, Медведково</h6>
                         </div>
                     </div>
-                    <div class="listing">
+                    <div class="listing" id="Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black" onclick="setDestination('Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black')">
                         <div style="text-align: center; width: 100%;">
                             <img src="files/Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black/1.jpg" class="listing_photo">
                         </div>
@@ -65,7 +70,7 @@
                             <h6>Москва, Павелецкая</h6>
                         </div>
                     </div>
-                    <div class="listing">
+                    <div class="listing" id="Epiphone Elitist Les Paul Standard Ebony" onclick="setDestination('Epiphone Elitist Les Paul Standard Ebony')">
                         <div style="text-align: center; width: 100%;">
                             <img src="files/Epiphone Elitist Les Paul Standard Ebony/1.jpg" class="listing_photo">
                         </div>
@@ -75,7 +80,7 @@
                             <h6>Москва, Арбатская</h6>
                         </div>
                     </div>
-                    <div class="listing">
+                    <div class="listing" id="Harley Benton TE-70 2020 Black Paisley" onclick="setDestination('Harley Benton TE-70 2020 Black Paisley')">
                         <div style="text-align: center; width: 100%;">
                             <img src="files/Harley Benton TE-70 2020 Black Paisley/1.jpg" class="listing_photo">
                         </div>
