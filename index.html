@@ -4,12 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/guitar_logo_small.png">
         <title>MusicTrade: Обмен и Продажа Музыкального Оборудования</title>
-        <script>
-            function setDestination(listingID){
-                document.cookie = `listingID=${listingID}`;
-                location.replace("listing.html");
-            }
-        </script>
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -23,7 +18,25 @@
                     </a>
                 </div>
                 <div class="searchbar"><input type="text" placeholder="Поиск по объявлениям" id="searchbar" onkeyup="search()"></div>
-                <div class="location"><img src="img/locationicon.png" style="height: 15px; margin-right: 5px;">Москва</div>
+                <div class="location">
+                    <div id="currentCity">
+                        <img src="img/locationicon.png" style="height: 15px; margin-right: 5px;"><sec class="current_location">Москва</sec>
+                    </div>
+                    <div class="city_options">
+                        <div class="select_city">
+                            <input type="text" id="citySearch" placeholder="Город" name="">
+                        </div>
+                        <ul class="cities">
+                            <li>Москва</li>
+                            <li>Санкт-Петербург</li>
+                            <li>Новосибирск</li>
+                            <li>Казань</li>
+                            <li>Краснодар</li>
+                            <li>Нижний Новгород</li>
+                        </ul>
+                    </div>
+                    <script src="citySelection.js"></script>
+                </div>
                 <div class="userlogin">Вход</div>
                 <div class="userregister">Регистрация</div>
             </div>
