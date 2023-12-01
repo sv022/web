@@ -1,5 +1,7 @@
 {
     "name": "Boss BD-2 Blues Driver Effect pedal",
     "decription": "The BD-2 Blues Driver delivers the creamy, yet crunchy sound associated with great blues guitar. This popular pedal provides instant access to the kind of warm overdrive and emotive distortion usually reserved for 30-year-old tube amps.",
-    "price": 11000
+    "price": 11000,
+    "location": "Москва, Пушкинская",
+    "tags": ["guitar_pedal", "overdrive"]
 }

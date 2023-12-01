@@ -1,5 +1,7 @@
 {
     "name": "Boss SY-1 Synthesizer - Blue",
     "decription": "Good as new",
-    "price": 17500
+    "price": 17500, 
+    "location": "Москва, Пушкинская",
+    "tags": ["guitar_pedal"]
 }
