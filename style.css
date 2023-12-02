@@ -227,6 +227,10 @@ h3 {
   color: #232122;
 }
 
+.listing_inactive {
+  display: none;
+}
+
 .listing:hover {
   box-shadow: 3px 3px rgb(201, 208, 209);
   box-shadow: 3px 3px 6px rgb(238, 244, 245), -3px -3px 6px rgb(238, 244, 245), -3px 3px 6px rgb(238, 244, 245), 3px -3px 6px rgb(238, 244, 245);
@@ -270,11 +274,16 @@ h3 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5%;
+  min-height: 37px;
 }
 
 .listing h6 {
   margin-top: 3%;
   color: #525c5c;
+}
+
+.listing p {
+  font-size: 0px;
 }
 
 .listing_page {

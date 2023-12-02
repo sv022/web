@@ -1,4 +1,9 @@
 function setDestination(listingID){
   document.cookie = `listingID=${listingID}`;
-  location.replace("listing.html");
+  window.open("listing.html", "_blank");
+}
+
+function setSearchRequestTag(keyword){
+  document.cookie = `searchRequest=${keyword}`;
+  window.open("search.html", "_blank");
 }

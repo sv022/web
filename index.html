@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <div class="navbar">
+            <div class="navbar" id="main">
                 <div class="logo">
                     <a href="index.html">
                         <picture>
@@ -45,64 +45,15 @@
             <div>
                 <h3>Искать в категории</h3>
                 <div class="category_searchbox">
-                    <div class="category"><a href="search.html">Электрогитары</a></div>
-                    <div class="category"><a href="search.html">Классические гитары</a></div>
-                    <div class="category"><a href="search.html">Акустические гитары</a></div>
-                    <div class="category"><a href="search.html">Гитарное усиление</a></div>
-                    <div class="category"><a href="search.html">Педали эффектов</a></div>
+                    <div class="category" onclick="setSearchRequestTag('guitar')">Электрогитары</div>
+                    <div class="category" onclick="setSearchRequestTag('classic_guitar')">Классические гитары</div>
+                    <div class="category" onclick="setSearchRequestTag('acoustic_guitar')">Акустические гитары</div>
+                    <div class="category" onclick="setSearchRequestTag('amplifier')">Гитарное усиление</div>
+                    <div class="category" onclick="setSearchRequestTag('guitar_pedal')">Педали эффектов</div>
                 </div>
                 <h3>Интересные объявления</h3>
-                <div class="remarkable_listings" id="remarkable_listings">
-                    <div class="listing" id="Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert" onclick="setDestination('Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert')">
-                        <div style="text-align: center; width: 100%;">
-                            <img src="files/Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert/1.jpg" class="listing_photo">
-                        </div>
-                        <div style="margin: 1%;">
-                            <h5>Ibanez RG950QMZ-RDT Premium 2013 - 2014 - Red Desert</h5>
-                            <div class="price_section"><h4>75 000 ₽</h4><img class="heart_listing"></div>
-                            <h6>Москва, Юго-Западная</h6>
-                        </div>
-                    </div>
-                    <div class="listing" id="1988 MIJ Fender Stratocaster 70s Reissue" onclick="setDestination('1988 MIJ Fender Stratocaster 70s Reissue')">
-                        <div style="text-align: center; width: 100%;">
-                            <img src="files/1988 MIJ Fender Stratocaster 70s Reissue/1.jpg" class="listing_photo">
-                        </div>
-                        <div>
-                            <h5>1988 MIJ Fender Stratocaster 70s Reissue</h5>
-                            <div class="price_section"><h4>105 000 ₽</h4><img class="heart_listing"></div>
-                            <h6>Москва, Медведково</h6>
-                        </div>
-                    </div>
-                    <div class="listing" id="Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black" onclick="setDestination('Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black')">
-                        <div style="text-align: center; width: 100%;">
-                            <img src="files/Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black/1.jpg" class="listing_photo">
-                        </div>
-                        <div>
-                            <h5>Blackstar HT Club 50 MkII 50-Watt Guitar Head 2017 - Present - Black</h5>
-                            <div class="price_section"><h4>50 000 ₽</h4><img class="heart_listing"></div>
-                            <h6>Москва, Павелецкая</h6>
-                        </div>
-                    </div>
-                    <div class="listing" id="Epiphone Elitist Les Paul Standard Ebony" onclick="setDestination('Epiphone Elitist Les Paul Standard Ebony')">
-                        <div style="text-align: center; width: 100%;">
-                            <img src="files/Epiphone Elitist Les Paul Standard Ebony/1.jpg" class="listing_photo">
-                        </div>
-                        <div>
-                            <h5>Epiphone Elitist Les Paul Standard Ebony</h5>
-                            <div class="price_section"><h4>140 000 ₽</h4><img class="heart_listing"></div>
-                            <h6>Москва, Арбатская</h6>
-                        </div>
-                    </div>
-                    <div class="listing" id="Harley Benton TE-70 2020 Black Paisley" onclick="setDestination('Harley Benton TE-70 2020 Black Paisley')">
-                        <div style="text-align: center; width: 100%;">
-                            <img src="files/Harley Benton TE-70 2020 Black Paisley/1.jpg" class="listing_photo">
-                        </div>
-                        <div>
-                            <h5>Harley Benton TE-70 2020 Black Paisley</h5>
-                            <div class="price_section"><h4>20 000 ₽</h4><img class="heart_listing"></div>
-                            <h6>Москва, Выхино</h6>
-                        </div>
-                    </div>
+                <div class="remarkable_listings" id="listingDisplay">
+                    <script src="search.js" ></script>
                 </div>
             </div>
         </main>
