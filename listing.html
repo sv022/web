@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/guitar_logo_small.png">
         <script src="photoGallery.js"></script>
+        <script src="index.js"></script>
         <title>MusicTrade: Обмен и Продажа Музыкального Оборудования</title>
     </head>
     <body>
@@ -17,7 +18,10 @@
                         </picture>
                     </a>
                 </div>
-                <div class="searchbar"><input type="text" placeholder="Поиск по объявлениям" id="searchbar" onkeyup="search()"></div>
+                <div class="searchbar">
+                    <input type="text" placeholder="Поиск по объявлениям" id="searchbar">
+                    <div style="align-self: center;" onclick="setSearchRequest()"><img src="img/search_glass.png" style="height: 25px;"></div>
+                </div>
                 <div class="location">
                     <div id="currentCity">
                         <img src="img/locationicon.png" style="height: 15px; margin-right: 5px;"><sec class="current_location">Москва</sec>

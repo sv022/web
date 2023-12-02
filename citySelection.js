@@ -7,7 +7,7 @@ currentCity.addEventListener('click', function() {
     citySelection.classList.toggle('active');
 })
 
-cities.forEach(function(cityEntry){
+cities.forEach(function(cityEntry) {
     cityEntry.addEventListener('click', function(){
         let text = cityEntry.textContent;
         currentCity.textContent = text;
@@ -18,7 +18,7 @@ cities.forEach(function(cityEntry){
     })
 })
 
-citySearch.addEventListener('keyup', function(){
+citySearch.addEventListener('keyup', function() {
     let filter, li, textValue;
     filter = citySearch.value.toUpperCase();
     li = citySelection.getElementsByTagName('li');

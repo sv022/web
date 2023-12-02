@@ -22,12 +22,13 @@ function getCookie(cname) {
 function filterSearch(searchTarget){
     console.log(searchTarget.length);
     try {
-        searchTarget = searchTarget.join();
+        searchTarget = searchTarget.join().toLowerCase();
     } catch {
-        searchTarget = searchTarget;
+        searchTarget = searchTarget.toLowerCase();
     }
     let searchRequest = getCookie("searchRequestTag");
     if (!searchRequest) searchRequest = getCookie("searchRequest");
+    searchRequest = searchRequest.toLowerCase();
     return searchTarget.includes(searchRequest);
 }
 
@@ -43,7 +44,7 @@ function displaySearchListing() {
                         (data) => data.json().then(
                             (listingInfo) => {
                                 if (!isMainPage)
-                                    if (!filterSearch(listingInfo["tags"]))
+                                    if (!filterSearch(listingInfo["tags"]) && !filterSearch(listingInfo["name"]))
                                         template = template.replace("listing", "listing_inactive");
                                 template = template.replaceAll("NAME", listingInfo["name"]);
                                 template = template.replace("IMGSRC", "files/" + listingInfo["name"]);
