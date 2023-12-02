@@ -15,7 +15,7 @@ function displaySearchListing() {
                             (listingInfo) => {
                                 template = template.replaceAll("NAME", listingInfo["name"]);
                                 template = template.replace("IMGSRC", "files/" + listingInfo["name"]);
-                                template = template.replace("PRICE", `${listingInfo["price"] / 1000} ${lpad(listingInfo["price"] % 1000, 3)}`);
+                                template = template.replace("PRICE", `${Math.floor(listingInfo["price"] / 1000)} ${lpad(listingInfo["price"] % 1000, 3)}`);
                                 template = template.replace("LOCATION", listingInfo["location"]);
                                 listingDisplay.innerHTML += template;
                                 }
