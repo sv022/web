@@ -134,7 +134,8 @@ h3 {
 .city_options {
   text-align: center;
   color: #232122;
-  margin-top: 10%;
+  margin-top: 15%;
+  margin-left: -50px;
   background-color: #fdfdfd;
   border: 1px solid #232122;
   border-radius: 5px;
