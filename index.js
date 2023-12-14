@@ -25,7 +25,7 @@ function setSearchRequestTag(keyword) {
 function setSearchRequest() {
   let input = document.getElementById("searchbar");
   let request = input.value;
-  // console.log(request);
+  console.log(request);
   document.cookie = `searchRequest=${request}`;
   if (document.getElementById("main"))
     window.open("search.html", "_blank");

@@ -19,15 +19,14 @@ function getCookie(cname) {
     return "";
 }
 
-function filterSearch(searchTarget){
+function filterSearch(searchTarget, search){
     // console.log(searchTarget.length);
     try {
         searchTarget = searchTarget.join().toLowerCase();
     } catch {
         searchTarget = searchTarget.toLowerCase();
     }
-    let searchRequest = getCookie("searchRequestTag");
-    if (!searchRequest) searchRequest = getCookie("searchRequest");
+    let searchRequest = search;
     searchRequest = searchRequest.toLowerCase();
     return searchTarget.includes(searchRequest);
 }
@@ -38,14 +37,25 @@ function displaySearchListing() {
     let isMainPage = document.getElementById("main");
     fetch("https://raw.githubusercontent.com/sv022/web/main/activeListings.json").then((responce) =>
         responce.json().then((json) => {
+                let tagSearch = getCookie("searchRequestTag");
+                let nameSearch = getCookie("searchRequest");
+                document.cookie = `searchRequestTag=None`;
+                document.cookie = `searchRequest=None`;
                 json["listings"].forEach(element => {
                     let template = templateRaw;
                     fetch(`https://raw.githubusercontent.com/sv022/web/main/files/${element}/properties.json`).then(
                         (data) => data.json().then(
                             (listingInfo) => {
-                                if (!isMainPage)
-                                    if (!filterSearch(listingInfo["tags"]) && !filterSearch(listingInfo["name"]))
-                                        template = template.replace("listing", "listing_inactive");
+                                if (!isMainPage){
+                                    console.log()
+                                    if (tagSearch != "None"){
+                                        if (!filterSearch(listingInfo["tags"], tagSearch))
+                                            template = template.replace("listing", "listing_inactive");
+                                    } else {
+                                        if (!filterSearch(listingInfo["name"], nameSearch))
+                                            template = template.replace("listing", "listing_inactive");
+                                    }
+                                }
                                 template = template.replaceAll("NAME", listingInfo["name"]);
                                 template = template.replace("IMGSRC", "files/" + listingInfo["name"]);
                                 template = template.replace("PRICE", `${Math.floor(listingInfo["price"] / 1000)} ${lpad(listingInfo["price"] % 1000, 3)}`);
@@ -58,6 +68,7 @@ function displaySearchListing() {
                             )
                         )
                 });
+                
             }
         )
     );
@@ -66,3 +77,4 @@ function displaySearchListing() {
 
 
 displaySearchListing();
+
