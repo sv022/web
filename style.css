@@ -145,7 +145,7 @@ h3 {
   background-color: #fdfdfd;
   border: 1px solid #232122;
   border-radius: 5px;
-  padding: 2%;
+  padding: 3%;
   z-index: 999;
   max-height: 300px;
   display: none;
@@ -156,6 +156,7 @@ h3 {
 }
 
 .select_city input {
+  width: 90%;
   font-size: 16px; 
   outline: none;
   border: 1px solid #525c5c;
