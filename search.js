@@ -20,7 +20,7 @@ function getCookie(cname) {
 }
 
 function filterSearch(searchTarget){
-    console.log(searchTarget.length);
+    // console.log(searchTarget.length);
     try {
         searchTarget = searchTarget.join().toLowerCase();
     } catch {
@@ -33,7 +33,7 @@ function filterSearch(searchTarget){
 }
 
 function displaySearchListing() {
-    let templateRaw = "<div class=\"listing\" onclick=\"setDestination('NAME')\"><div style=\"text-align: center; width: 100%;\"><img src=\"IMGSRC/1.jpg\" class=\"listing_photo\"></div><div><h5>NAME</h5><div class=\"price_section\"><h4>PRICE ₽</h4><img class=\"heart_listing\"></div><h6>LOCATION</h6><p>TAGS</p></div></div>";
+    let templateRaw = "<div class=\"listing\" onclick=\"setDestination('NAME')\"><div style=\"text-align: center; width: 100%;\"><img src=\"IMGSRC/1.jpg\" class=\"listing_photo\"></div><div><h5>NAME</h5><div class=\"price_section\"><h4>PRICE ₽</h4><img class=\"heart_listing\"></div><h6>LOCATION</h6><p class=\"listing_tags\">TAGS</p></div></div>";
     let listingDisplay = document.getElementById("listingDisplay");
     let isMainPage = document.getElementById("main");
     fetch("https://raw.githubusercontent.com/sv022/web/main/activeListings.json").then((responce) =>
@@ -63,5 +63,6 @@ function displaySearchListing() {
     );
     //listingDisplay.innerHTML += template;
 };
+
 
 displaySearchListing();

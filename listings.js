@@ -44,4 +44,4 @@ function setListingData(){
   //let listingdata = fetch(`./files/${listingID}/properties.json"`).then((responce) => responce.json());
 }
   
-  setListingData();
+setListingData();

@@ -5,6 +5,11 @@ grey - #DDDEDE
 blue-ish - #7BA4A8
 */
 
+@font-face {
+  font-family: "sans-serif";
+  src: url("Roboto/Roboto-Regular.ttf");
+}
+
 html {
   font-family: 'Roboto', sans-serif;
 }
@@ -89,6 +94,7 @@ h3 {
   color: black;
   font-size: 22px;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 .userregister {
@@ -97,6 +103,7 @@ h3 {
   color: #232122;
   font-size: 22px;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 @media (max-width: 730px){
@@ -133,7 +140,8 @@ h3 {
 .city_options {
   text-align: center;
   color: #232122;
-  margin-top: 10%;
+  margin-top: 15%;
+  margin-left: -50px;
   background-color: #fdfdfd;
   border: 1px solid #232122;
   border-radius: 5px;
@@ -223,8 +231,8 @@ h3 {
 .listing {
   height: 350px;
   width: 300px;
-  padding: 0.3%;
-  /*border: 1px solid #f3f3f3;*/
+  padding: 0.5%;
+  /* border: 1px solid #f3f3f3; */
   border-radius: 10px;
   margin: 3px;
   color: #232122;
@@ -285,8 +293,8 @@ h3 {
   color: #525c5c;
 }
 
-.listing p {
-  font-size: 0px;
+.listing_tags {
+  display: none;
 }
 
 .listing_page {
@@ -419,10 +427,34 @@ h3 {
   }
 }
 
-@media (max-width: 1115px) {
-  
+@media (max-width: 900px) {
+  .listing_photo_gallery {
+    width: 400px;
+    height: 300px;
+  }
+  .listing_page_photo {
+    width: 400px;
+    height: 300px;
+  }
 }
 
+@media (max-width: 500px) {
+  .listing {
+    padding: 10px;
+  }
+  main {
+    padding: 0px;
+  }
+  footer {
+    font-size: 8px;
+  }
+}
+
+.error_message {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
 .site_footer {
   display: flex;
