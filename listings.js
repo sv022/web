@@ -32,7 +32,7 @@ function setListingData(){
               json => {
                   template = template.replace("IMGSRC", "\"files/" + json["name"] + "/1.jpg\"");
                   template = template.replaceAll("NAME", json["name"]);
-                  template = template.replace("PRICE", `${json["price"] / 1000} ${lpad(json["price"] % 1000, 3)}`);
+                  template = template.replace("PRICE", `${Math.floor(json["price"] / 1000)} ${lpad(json["price"] % 1000, 3)}`);
                   template = template.replace("DESCRIPTION", json["decription"]);
                   template = template.replace("MAXINDEX", json["photos"]);
                   let listing = document.getElementById("listing");

@@ -14,6 +14,7 @@ header {
   width: 98dvw;
   padding-top: 1%;
   padding-bottom: 1%;
+  /* margin-top: -17px; */
   position: sticky;
   top: 0;
   left: 0;
@@ -400,7 +401,7 @@ h3 {
   width: 70%;
 }
 
-@media (max-width: 1115px){
+@media (max-width: 1140px){
   .seller_profile {
     margin-top: 3vh;
   }
