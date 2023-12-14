@@ -5,6 +5,11 @@ grey - #DDDEDE
 blue-ish - #7BA4A8
 */
 
+@font-face {
+  font-family: "sans-serif";
+  src: url("Roboto/Roboto-Regular.ttf");
+}
+
 html {
   font-family: 'Roboto', sans-serif;
 }
@@ -287,8 +292,8 @@ h3 {
   color: #525c5c;
 }
 
-.listing p {
-  font-size: 0px;
+.listing_tags {
+  display: none;
 }
 
 .listing_page {
