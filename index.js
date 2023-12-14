@@ -1,15 +1,9 @@
 function userLogin(){
-  if (document.getElementById("main"))
-    window.open("error.html", "_blank");
-  else
-    window.open("error.html", "_self");
+  window.open("error.html", "_self");
 }
 
 function userRegister(){
-  if (document.getElementById("main"))
-    window.open("error.html", "_blank");
-  else
-    window.open("error.html", "_self");
+  window.open("error.html", "_self");
 }
 
 function setDestination(listingID) {
