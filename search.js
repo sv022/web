@@ -20,7 +20,7 @@ function getCookie(cname) {
 }
 
 function filterSearch(searchTarget){
-    console.log(searchTarget.length);
+    // console.log(searchTarget.length);
     try {
         searchTarget = searchTarget.join().toLowerCase();
     } catch {
@@ -63,5 +63,6 @@ function displaySearchListing() {
     );
     //listingDisplay.innerHTML += template;
 };
+
 
 displaySearchListing();
